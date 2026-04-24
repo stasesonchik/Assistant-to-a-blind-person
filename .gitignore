@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
+.venv/
+.venv313/
+data/
+models/
+third_party/
+

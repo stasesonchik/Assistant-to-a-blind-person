@@ -1,0 +1,8 @@
+numpy>=2.0
+opencv-python>=4.10
+sounddevice>=0.5
+vosk>=0.3.44
+huggingface_hub>=0.28
+requests>=2.32
+torch>=2.2
+torchaudio>=2.2

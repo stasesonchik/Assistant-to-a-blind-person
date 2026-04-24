@@ -1,0 +1,5 @@
+-r requirements.txt
+opencv-python-headless>=4.10
+vllm>=0.11.0
+qwen-vl-utils>=0.0.14
+
