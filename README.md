@@ -100,6 +100,25 @@ python scripts/smoke_test.py
 python -m vision_voice_assistant --image path/to/photo.jpg --no-tts
 ```
 
+## Датасет для всего проекта
+
+Для проекта теперь есть отдельный reproducible dataset pipeline:
+
+```bash
+python scripts/assemble_project_dataset.py all
+```
+
+Он собирает:
+
+- локальные `stop` positives
+- русскую речь для STT и speech negatives
+- шумовые negatives
+- vision description eval
+- OCR eval на `COCO-Text` с автоматической докачкой нужного subset изображений
+- memory regression scenarios
+
+Подробности и оговорки по лицензиям: `docs/DATASET_GUIDE.md`.
+
 ## Проверенный локальный режим на Mac
 
 На Apple Silicon у меня успешно отработал такой путь:
